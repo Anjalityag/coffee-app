@@ -131,7 +131,7 @@ section{
     transform-origin: top;
 }
 
-.header .search-form .active{
+.header .search-form.active{
     transform: scaleY(1);
 }
 
@@ -164,7 +164,7 @@ section{
     padding: 0.1rem;
 }
 
-.header .cart-items-container .active{
+.header .cart-items-container.active{
     right: 0;
 }
 
@@ -603,8 +603,12 @@ section{
         height: calc(100vh - 9.5rem);
     }
 
-    .header .navbar .active{
+    .header .navbar.active{
         right: 0;
+        width: 100% !important;
+        text-align: center;
+        -os-text-align: center;
+        -moz-text-align: center;
     }
 
     .header .navbar a{
@@ -613,6 +617,8 @@ section{
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
+        color: #fff;
+        border-bottom: 1px solid #fff;
     }
 
     .header .search-form{
